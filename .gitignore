@@ -1,0 +1,22 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*.DS_Store
+screenlog.*
+config.xml
+src/client/index.html
+sonar.properties
+node_modules
+platforms/
+plugins/
+www/*
+src/client/lib/
+src/client/css/
+src/client/template/
+src/client/cache/
+reports/
+dist/
+011_update_config.js
+npm-debug.log
+*.DS_Store
+.DS_Store

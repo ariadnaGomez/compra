@@ -1,0 +1,83 @@
+//  COLORS
+// -----------------------------------------------
+
+// New range of colors
+
+$color-white:          #FFFFFF;
+
+$color-black:          #000000;
+
+$color-cyan-100:       #BFDDF1;
+$color-cyan-200:       #afd5ee;
+$color-cyan-300:       #1dafec;
+$color-cyan-400:       #38aefb;
+$color-cyan-500:       #409bd6;
+$color-cyan-600:       #2196F3;
+$color-cyan-700:       #0079c8;
+$color-cyan-800:       #017ac9;
+
+$color-gray-50:        #FBFAFA;
+$color-gray-100:       #E6E6E6;
+$color-gray-200:       #AFAFAF;
+$color-gray-300:       #CCCCCC;
+$color-gray-400:       #DDDDDD;
+$color-gray-500:       #6c6e71;
+$color-gray-700:       #3A4351;
+
+$color-green-300:      #92c800;
+$color-green-400:      #40a2a4;
+$color-green-600:      #008385;
+$color-green-600:      #007a3d;
+
+$color-purple-400:     #a4219b;
+$color-purple-500:     #6a2ca1;
+$color-purple-600:     #942151;
+
+$color-pink-500:       #c6007e;
+$color-pink-600:       #e60e68;
+
+
+$color-red-500:        #d91e05;
+
+$color-orange-400:     #ef8900;
+$color-orange-500:     #FE5000;
+
+$color-yellow-500:     #edcd1a;
+$color-yellow-600:     #939905;
+
+$color-facebook:       #3465a3;
+$color-tweeter:        #27abe3;
+$color-share-email:    #f48230;
+
+$brand-item-deactivated: rgba(0,121,200,0.6);
+
+$brand-item-activated: lighten($color-cyan-400, 35% );
+
+$walkthrough-background: rgba(0, 0, 0, .8);
+$walkthrough-background-shadow: rgba(0, 0, 0, 0.1);
+
+
+$shadow-box: rgba(0, 0, 0, 0.2);
+
+$backdrop-background: rgba(0, 0, 0, .4);
+$backdrop-background-tablet: rgba(0, 0, 0, .01);
+
+$color-white-trans085 : rgba(255, 255, 255, 0.85);
+//  SIZES
+// -----------------------------------------------
+
+// paddings
+
+$space-zero: 0px;
+$space-sm: 7px;
+$space-md: 15px;
+$space-lg: 30px;
+$space-xlg: 50px;
+
+// FONTS
+// -----------------------------------------------
+
+// Montserrat
+$montserrat-light  : 300;
+$montserrat-normal : 500;
+$montserrat-bold   : 700;

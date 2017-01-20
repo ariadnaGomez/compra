@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'sanitasicons';
+  src:
+    url('fonts/sanitasicons.ttf?5umgn8') format('truetype'),
+    url('fonts/sanitasicons.woff?5umgn8') format('woff'),
+    url('fonts/sanitasicons.svg?5umgn8#sanitasicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-san {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sanitasicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.san-alert:before {
+  content: "\e900";
+}
+.san-alert_2:before {
+  content: "\e901";
+}
+.san-archivo:before {
+  content: "\e902";
+}
+.san-arrow_down:before {
+  content: "\e903";
+}
+.san-arrow_left:before {
+  content: "\e904";
+}
+.san-arrow_right:before {
+  content: "\e905";
+}
+.san-arrow_up:before {
+  content: "\e906";
+}
+.san-bot_down:before {
+  content: "\e907";
+}
+.san-bot_up:before {
+  content: "\e908";
+}
+.san-calendario:before {
+  content: "\e909";
+}
+.san-camera:before {
+  content: "\e90a";
+}
+.san-close_menu:before {
+  content: "\e90b";
+}
+.san-comida:before {
+  content: "\e90c";
+}
+.san-comida_2:before {
+  content: "\e90d";
+}
+.san-configuracion:before {
+  content: "\e90e";
+}
+.san-contacto:before {
+  content: "\e90f";
+}
+.san-cuidar:before {
+  content: "\e910";
+}
+.san-descarga:before {
+  content: "\e911";
+}
+.san-document:before {
+  content: "\e912";
+}
+.san-educacion:before {
+  content: "\e913";
+}
+.san-equipo:before {
+  content: "\e914";
+}
+.san-facturas:before {
+  content: "\e915";
+}
+.san-filtrado:before {
+  content: "\e916";
+}
+.san-fisioterapia:before {
+  content: "\e917";
+}
+.san-help:before {
+  content: "\e918";
+}
+.san-higiene_2:before {
+  content: "\e919";
+}
+.san-higiene:before {
+  content: "\e91a";
+}
+.san-historico:before {
+  content: "\e91b";
+}
+.san-home:before {
+  content: "\e91c";
+}
+.san-imagen:before {
+  content: "\e91d";
+}
+.san-informacion:before {
+  content: "\e91e";
+}
+.san-informe:before {
+  content: "\e91f";
+}
+.san-informes_todos_2:before {
+  content: "\e920";
+}
+.san-informes_todos:before {
+  content: "\e921";
+}
+.san-ko:before {
+  content: "\e922";
+}
+.san-ko_2:before {
+  content: "\e923";
+}
+.san-lapiz:before {
+  content: "\e924";
+}
+.san-lectura_comun:before {
+  content: "\e925";
+}
+.san-localizacion:before {
+  content: "\e926";
+}
+.san-logout:before {
+  content: "\e927";
+}
+.san-mas:before {
+  content: "\e928";
+}
+.san-medicacion_2:before {
+  content: "\e929";
+}
+.san-medicacion:before {
+  content: "\e92a";
+}
+.san-menos:before {
+  content: "\e92b";
+}
+.san-menu_familiar:before {
+  content: "\e92c";
+}
+.san-menu_mobile:before {
+  content: "\e92d";
+}
+.san-ocio:before {
+  content: "\e92e";
+}
+.san-ocio_2:before {
+  content: "\e92f";
+}
+.san-ok:before {
+  content: "\e930";
+}
+.san-ok_2:before {
+  content: "\e931";
+}
+.san-pdf:before {
+  content: "\e932";
+}
+.san-perfil:before {
+  content: "\e933";
+}
+.san-persona:before {
+  content: "\e934";
+}
+.san-pintura:before {
+  content: "\e935";
+}
+.san-plato_medio_ok .path1:before {
+  content: "\e936";
+  color: rgb(230, 230, 230);
+}
+.san-plato_medio_ok .path2:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_medio_ok .path3:before {
+  content: "\e938";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_medio_ok .path4:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_medio_ok .path5:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_mucho_ok .path1:before {
+  content: "\e93b";
+  color: rgb(230, 230, 230);
+}
+.san-plato_mucho_ok .path2:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_mucho_ok .path3:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_mucho_ok .path4:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_mucho_ok .path5:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_poco_ok .path1:before {
+  content: "\e940";
+  color: rgb(230, 230, 230);
+}
+.san-plato_poco_ok .path2:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_poco_ok .path3:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_poco_ok .path4:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_poco_ok .path5:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_poco_ok .path6:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(127, 188, 227);
+}
+.san-plato_todo_ok:before {
+  content: "\e946";
+}
+.san-psicologia:before {
+  content: "\e947";
+}
+.san-relaciones:before {
+  content: "\e948";
+}
+.san-residencia:before {
+  content: "\e949";
+}
+.san-seguimiento:before {
+  content: "\e94a";
+}
+.san-seguimientos_2:before {
+  content: "\e94b";
+}
+.san-sugerencias:before {
+  content: "\e94c";
+}
+.san-actividad:before {
+  content: "\e94d";
+}
+.san-telefono:before {
+  content: "\e94e";
+}
+.san-pass:before {
+  content: "\e631";
+}
+.san-usuario:before {
+  content: "\e632";
+}
+.san-close:before {
+  content: "\e965";
+}
+

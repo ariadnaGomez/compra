@@ -1,0 +1,467 @@
+@import "variables";
+
+@font-face {
+  font-family: 'sanitasicons';
+  src:
+    url('#{$icomoon-font-path}/sanitasicons.ttf?5umgn8') format('truetype'),
+    url('#{$icomoon-font-path}/sanitasicons.woff?5umgn8') format('woff'),
+    url('#{$icomoon-font-path}/sanitasicons.svg?5umgn8#sanitasicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-san {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sanitasicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.san-alert {
+  &:before {
+    content: $san-alert;
+  }
+}
+.san-alert_2 {
+  &:before {
+    content: $san-alert_2;
+  }
+}
+.san-archivo {
+  &:before {
+    content: $san-archivo;
+  }
+}
+.san-arrow_down {
+  &:before {
+    content: $san-arrow_down;
+  }
+}
+.san-arrow_left {
+  &:before {
+    content: $san-arrow_left;
+  }
+}
+.san-arrow_right {
+  &:before {
+    content: $san-arrow_right;
+  }
+}
+.san-arrow_up {
+  &:before {
+    content: $san-arrow_up;
+  }
+}
+.san-bot_down {
+  &:before {
+    content: $san-bot_down;
+  }
+}
+.san-bot_up {
+  &:before {
+    content: $san-bot_up;
+  }
+}
+.san-calendario {
+  &:before {
+    content: $san-calendario;
+  }
+}
+.san-camera {
+  &:before {
+    content: $san-camera;
+  }
+}
+.san-close_menu {
+  &:before {
+    content: $san-close_menu;
+  }
+}
+.san-comida {
+  &:before {
+    content: $san-comida;
+  }
+}
+.san-comida_2 {
+  &:before {
+    content: $san-comida_2;
+  }
+}
+.san-configuracion {
+  &:before {
+    content: $san-configuracion;
+  }
+}
+.san-contacto {
+  &:before {
+    content: $san-contacto;
+  }
+}
+.san-cuidar {
+  &:before {
+    content: $san-cuidar;
+  }
+}
+.san-descarga {
+  &:before {
+    content: $san-descarga;
+  }
+}
+.san-document {
+  &:before {
+    content: $san-document;
+  }
+}
+.san-educacion {
+  &:before {
+    content: $san-educacion;
+  }
+}
+.san-equipo {
+  &:before {
+    content: $san-equipo;
+  }
+}
+.san-facturas {
+  &:before {
+    content: $san-facturas;
+  }
+}
+.san-filtrado {
+  &:before {
+    content: $san-filtrado;
+  }
+}
+.san-fisioterapia {
+  &:before {
+    content: $san-fisioterapia;
+  }
+}
+.san-help {
+  &:before {
+    content: $san-help;
+  }
+}
+.san-higiene_2 {
+  &:before {
+    content: $san-higiene_2;
+  }
+}
+.san-higiene {
+  &:before {
+    content: $san-higiene;
+  }
+}
+.san-historico {
+  &:before {
+    content: $san-historico;
+  }
+}
+.san-home {
+  &:before {
+    content: $san-home;
+  }
+}
+.san-imagen {
+  &:before {
+    content: $san-imagen;
+  }
+}
+.san-informacion {
+  &:before {
+    content: $san-informacion;
+  }
+}
+.san-informe {
+  &:before {
+    content: $san-informe;
+  }
+}
+.san-informes_todos_2 {
+  &:before {
+    content: $san-informes_todos_2;
+  }
+}
+.san-informes_todos {
+  &:before {
+    content: $san-informes_todos;
+  }
+}
+.san-ko {
+  &:before {
+    content: $san-ko;
+  }
+}
+.san-ko_2 {
+  &:before {
+    content: $san-ko_2;
+  }
+}
+.san-lapiz {
+  &:before {
+    content: $san-lapiz;
+  }
+}
+.san-lectura_comun {
+  &:before {
+    content: $san-lectura_comun;
+  }
+}
+.san-localizacion {
+  &:before {
+    content: $san-localizacion;
+  }
+}
+.san-logout {
+  &:before {
+    content: $san-logout;
+  }
+}
+.san-mas {
+  &:before {
+    content: $san-mas;
+  }
+}
+.san-medicacion_2 {
+  &:before {
+    content: $san-medicacion_2;
+  }
+}
+.san-medicacion {
+  &:before {
+    content: $san-medicacion;
+  }
+}
+.san-menos {
+  &:before {
+    content: $san-menos;
+  }
+}
+.san-menu_familiar {
+  &:before {
+    content: $san-menu_familiar;
+  }
+}
+.san-menu_mobile {
+  &:before {
+    content: $san-menu_mobile;
+  }
+}
+.san-ocio {
+  &:before {
+    content: $san-ocio;
+  }
+}
+.san-ocio_2 {
+  &:before {
+    content: $san-ocio_2;
+  }
+}
+.san-ok {
+  &:before {
+    content: $san-ok;
+  }
+}
+.san-ok_2 {
+  &:before {
+    content: $san-ok_2;
+  }
+}
+.san-pdf {
+  &:before {
+    content: $san-pdf;
+  }
+}
+.san-perfil {
+  &:before {
+    content: $san-perfil;
+  }
+}
+.san-persona {
+  &:before {
+    content: $san-persona;
+  }
+}
+.san-pintura {
+  &:before {
+    content: $san-pintura;
+  }
+}
+.san-plato_medio_ok .path1 {
+  &:before {
+    content: $san-plato_medio_ok-path1;  
+    color: rgb(230, 230, 230);
+  }
+}
+.san-plato_medio_ok .path2 {
+  &:before {
+    content: $san-plato_medio_ok-path2;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_medio_ok .path3 {
+  &:before {
+    content: $san-plato_medio_ok-path3;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_medio_ok .path4 {
+  &:before {
+    content: $san-plato_medio_ok-path4;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_medio_ok .path5 {
+  &:before {
+    content: $san-plato_medio_ok-path5;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_mucho_ok .path1 {
+  &:before {
+    content: $san-plato_mucho_ok-path1;  
+    color: rgb(230, 230, 230);
+  }
+}
+.san-plato_mucho_ok .path2 {
+  &:before {
+    content: $san-plato_mucho_ok-path2;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_mucho_ok .path3 {
+  &:before {
+    content: $san-plato_mucho_ok-path3;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_mucho_ok .path4 {
+  &:before {
+    content: $san-plato_mucho_ok-path4;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_mucho_ok .path5 {
+  &:before {
+    content: $san-plato_mucho_ok-path5;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_poco_ok .path1 {
+  &:before {
+    content: $san-plato_poco_ok-path1;  
+    color: rgb(230, 230, 230);
+  }
+}
+.san-plato_poco_ok .path2 {
+  &:before {
+    content: $san-plato_poco_ok-path2;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_poco_ok .path3 {
+  &:before {
+    content: $san-plato_poco_ok-path3;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_poco_ok .path4 {
+  &:before {
+    content: $san-plato_poco_ok-path4;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_poco_ok .path5 {
+  &:before {
+    content: $san-plato_poco_ok-path5;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_poco_ok .path6 {
+  &:before {
+    content: $san-plato_poco_ok-path6;  
+    margin-left: -1em;  
+    color: rgb(127, 188, 227);
+  }
+}
+.san-plato_todo_ok {
+  &:before {
+    content: $san-plato_todo_ok;
+  }
+}
+.san-psicologia {
+  &:before {
+    content: $san-psicologia;
+  }
+}
+.san-relaciones {
+  &:before {
+    content: $san-relaciones;
+  }
+}
+.san-residencia {
+  &:before {
+    content: $san-residencia;
+  }
+}
+.san-seguimiento {
+  &:before {
+    content: $san-seguimiento;
+  }
+}
+.san-seguimientos_2 {
+  &:before {
+    content: $san-seguimientos_2;
+  }
+}
+.san-sugerencias {
+  &:before {
+    content: $san-sugerencias;
+  }
+}
+.san-actividad {
+  &:before {
+    content: $san-actividad;
+  }
+}
+.san-telefono {
+  &:before {
+    content: $san-telefono;
+  }
+}
+.san-pass {
+  &:before {
+    content: $san-pass;
+  }
+}
+.san-usuario {
+  &:before {
+    content: $san-usuario;
+  }
+}
+.san-close {
+  &:before {
+    content: $san-close;
+  }
+}
+

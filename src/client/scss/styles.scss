@@ -1,0 +1,61 @@
+/*
+
+    Sanitas Styles
+
+ */
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "./fonts" !default;
+
+// Fonts
+@import "./fonts";
+
+// Sanitas Icons
+@import "./fonts-sanitasicons";
+
+// Config
+@import "./variables";
+
+// Variables Ionic Overwrite
+@import "./ionic-overwrite/variables";
+
+// Include all of Ionic
+@import "../lib/ionic/scss/ionic";
+
+// Helpers
+@import "./mixins";
+@import "./helpers";
+
+// Lib
+
+// Ionic Overwrite
+@import "./ionic-overwrite/bar";
+@import "./ionic-overwrite/buttons";
+@import "./ionic-overwrite/slider-box";
+@import "./ionic-overwrite/footer";
+@import "./ionic-overwrite/toggle";
+@import "./ionic-overwrite/form";
+@import "./ionic-overwrite/items";
+@import "./ionic-overwrite/action-sheet";
+@import "./ionic-overwrite/spinner";
+@import "./lib/carousel/advanced-carousel";
+@import "./lib/datePicker/datePicker";
+@import "./lib/toast/toast";
+
+@import "./ionic-overwrite/popup";
+
+// App
+@import "./global";
+@import "./form";
+@import "./nav";
+
+// iOS
+@import "./ios";
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all the sass files automatically
+ */
+
+// injector
+// endinjector

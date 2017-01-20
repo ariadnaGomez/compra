@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= fontName %></title>
+    <link href="<%= fontName %>.css" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: sans-serif; text-align: center; background: #efefef }
+        body > h1 { color: #666; margin: 1em 0 }
+        .glyph { padding: 0 }
+        .glyph > li { display: block; width: 100%; padding: 1.5em; position: relative }
+        @media (min-width: 992px) {
+        .glyph > li { display: inline-block; width: 48%; }
+        }
+        .glyph > li > .inner { background: #fff; border-radius: .5em; }
+        h2 { margin: 0; padding: .5em 0; }
+        h2 > span { font-size: .8em; font-weigth: normal; color: #777; }
+        .glyph-name { color: #555;}
+        .glyph-codepoint { font-family: monospace }
+        .x1 { font-size: 1em; }
+        .x2 { font-size: 2em; }
+        .x3 { font-size: 4em; }
+        .x4 { font-size: 6em; }
+        .x5 { font-size: 8em; }
+    </style>
+  </head>
+  <body>
+    <h1><%= fontName %></h1>
+    <ul class="glyph"><% _.each(glyphs, function(glyph) { %>
+      <li>
+        <div class="inner">
+          <div>
+            <span class="<%= className %>-<%= glyph.name %> x5"></span>
+            <span class="<%= className %>-<%= glyph.name %> x4"></span>
+            <span class="<%= className %>-<%= glyph.name %> x3"></span>
+            <span class="<%= className %>-<%= glyph.name %> x2"></span>
+            <span class="<%= className %>-<%= glyph.name %> x1"></span>
+          </div>
+          <h2>
+            <span class="glyph-name"><%= glyph.name %></span>
+            <span>· unicode: </span>
+            <span class="glyph-codepoint"><%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %></span>
+          </h2>
+        </div>
+      </li><% }); %>
+    </ul>
+  </body>
+</html>

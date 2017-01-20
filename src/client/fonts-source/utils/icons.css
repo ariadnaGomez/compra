@@ -1,0 +1,35 @@
+/**
+<%= fontName %> Webfont
+*/
+
+@font-face {
+    font-family: "<%= fontName %>";
+    src: url("<%= fontPath %><%= fontName %>.eot?<%= fontDate %>");
+    src: url("<%= fontPath %><%= fontName %>.eot?#iefix-<%= fontDate %>") format("embedded-opentype"),
+         url("<%= fontPath %><%= fontName %>.woff2?<%= fontDate %>") format("woff"),
+         url("<%= fontPath %><%= fontName %>.woff.ttf?<%= fontDate %>") format("woff"),
+         url("<%= fontPath %><%= fontName %>.ttf?<%= fontDate %>") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+<%=glyphs.map(function (glyph) { return '.'+className+'-'+glyph.name }).join(',\n') %> {
+    font-family: "<%= fontName %>";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: middle;
+    speak: none;
+    text-decoration: inherit;
+    text-rendering: auto;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+             font-smoothing: antialiased;
+}
+
+<% _.each(glyphs, function (glyph) { %>.<%=className%>-<%=glyph.name %>::before {
+    content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>";
+}<% });%>

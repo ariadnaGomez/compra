@@ -1,0 +1,4 @@
+src/client/app/core/CMI/lib/*.js
+src/client/app/widgets/ngmap/ng-map.js
+src/client/app/lib-external/**/*.js
+src/client/app/features/phemium-app/phemium.min.js

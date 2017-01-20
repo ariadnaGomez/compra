@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="%APP_PACKAGE%"
+        version="%APP_VERSION%"
+        android-versionCode="%APP_VERSIONCODE%"
+        ios-CFBundleVersion="%APP_VERSION%">
+
+  <name>%APP_NAME%</name>
+
+  <description>App</description>
+  <content src="index.html"/>
+
+  <preference name="android-build-tool" value="ant" />
+
+  <!-- Customize your app and platform with the preference element. -->
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <!-- Set Jelly Bean as minimum version Android (ionic restriction)-->
+  <!-- With crosswalk we can down to 14 (Ice Cream Sandwich) -->
+  <preference name="android-minSdkVersion" value="%MIN_SDK_VERSION%"/>
+  <preference name="android-targetSdkVersion" value="23"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <!-- Diseble landscape orientation -->
+  <preference name="Orientation" value="portrait" />
+  <preference name="FadeSplashScreen" value="true" />
+  <!-- PhoneGacp CLI >= 5.1.1 it's necesary to add crosswalk -->
+  <preference name='phonegap-version' value='cli-5.2.0' />
+  <preference name="ShowSplashScreenSpinner" value="false" />
+  <preference name="FadeSplashScreen" value="true" />
+  <preference name="FadeSplashScreenDuration" value="1000" />
+  <preference name="target-device" value="universal" />
+  <feature name="Keyboard">
+    <param name="ios-package" value="IonicKeyboard" onload="true"/>
+  </feature>
+  <preference name="Fullscreen" value="false" />
+  <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+  <preference name="loadUrlTimeoutValue" value="60000"/>
+  <feature name="SplashScreen">
+      <param name="ios-package" value="CDVSplashScreen" />
+      <param name="onload" value="false" />
+  </feature>
+
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+      <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+      <allow-intent href="itms:*"/>
+      <allow-intent href="itms-apps:*"/>
+  </platform>
+
+  <platform name="ios">
+    <config-file target="*-Info.plist" parent="CFBundleLocalizations">
+          <array>
+              <string>es</string>
+          </array>
+    </config-file>
+    <config-file target="*-Info.plist" parent="CFBundleURLTypes" mode="add">
+        <array>
+            <dict>
+                <key>ITSAppUsesNonExemptEncryption</key>
+                <false/>
+            </dict>
+        </array>
+    </config-file>
+    <config-file target="*-Info.plist" parent="ITSAppUsesNonExemptEncryption" mode="add">
+        <false/>
+    </config-file>
+
+      <!-- iOS 8.0+ -->
+      <!-- iPhone 6 Plus  -->
+      <icon src="resources/ios/icon/icon-60@3x.png" width="180" height="180" />
+      <!-- iOS 7.0+ -->
+      <!-- iPhone / iPod Touch  -->
+      <icon src="resources/ios/icon/icon-60.png" width="60" height="60" />
+      <icon src="resources/ios/icon/icon-60@2x.png" width="120" height="120" />
+      <!-- iPad -->
+      <icon src="resources/ios/icon/icon-76.png" width="76" height="76" />
+      <icon src="resources/ios/icon/icon-76@2x.png" width="152" height="152" />
+      <!-- iOS 6.1 -->
+      <!-- Spotlight Icon -->
+      <icon src="resources/ios/icon/icon-40.png" width="40" height="40" />
+      <icon src="resources/ios/icon/icon-40@2x.png" width="80" height="80" />
+      <icon src="resources/ios/icon/icon-40@3x.png" width="80" height="80" />
+
+      <!-- iPhone / iPod Touch -->
+      <icon src="resources/ios/icon/icon.png" width="57" height="57" />
+      <icon src="resources/ios/icon/icon@2x.png" width="114" height="114" />
+      <!-- iPad -->
+      <icon src="resources/ios/icon/icon-72.png" width="72" height="72" />
+      <icon src="resources/ios/icon/icon-72@2x.png" width="144" height="144" />
+      <!-- iPhone Spotlight and Settings Icon -->
+      <icon src="resources/ios/icon/icon-small.png" width="29" height="29" />
+      <icon src="resources/ios/icon/icon-small@2x.png" width="58" height="58" />
+      <icon src="resources/ios/icon/icon-small@3x.png" width="87" height="87" />
+
+      <!-- iPad Spotlight and Settings Icon -->
+      <icon src="resources/ios/icon/icon-50.png" width="50" height="50" />
+      <icon src="resources/ios/icon/icon-50@2x.png" width="100" height="100" />
+      <icon src="resources/ios/icon/icon-83.5@2x.png" width="167" height="167" />
+
+      <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
+      <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
+      <splash src="resources/ios/splash/Default-568h@2x~iphone.png" width="640" height="1136"/>
+      <splash src="resources/ios/splash/Default-667h.png" width="750" height="1334"/>
+      <splash src="resources/ios/splash/Default-736h@3x.png" width="1242" height="2208"/>
+      <splash src="resources/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"/>
+      <splash src="resources/ios/splash/Default-Portrait2x~ipad.png" width="1536" height="2048"/>
+  </platform>
+
+
+  <!-- Android splash && icons -->
+  <platform name="android">
+      <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi" />
+      <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi" />
+      <icon src="resources/android/icon/drawable-hdpi-icon.png" density="hdpi" />
+      <icon src="resources/android/icon/drawable-xhdpi-icon.png" density="xhdpi" />
+      <icon src="resources/android/icon/drawable-xxhdpi-icon.png" density="xxhdpi" />
+      <icon src="resources/android/icon/drawable-xxxhdpi-icon.png" density="fr-xxhdpi" />
+      <splash src="resources/android/splash/drawable-port-hdpi-screen.png" density="port-hdpi"/>
+      <splash src="resources/android/splash/drawable-port-ldpi-screen.png" density="port-ldpi"/>
+      <splash src="resources/android/splash/drawable-port-mdpi-screen.png" density="port-mdpi"/>
+      <splash src="resources/android/splash/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+      <config-file target="AndroidManifest.xml" parent="/*">
+        <supports-screens
+                android:xlargeScreens="false"
+                android:largeScreens="false"
+                android:smallScreens="true"
+                android:normalScreens="true"/>
+      </config-file>
+  </platform>
+
+  <config-file platform="android" target="AndroidManifest.xml" parent="/*">
+      <supports-screens
+          android:xlargeScreens="false"
+          android:largeScreens="false"
+          android:smallScreens="true"
+          android:normalScreens="true"/>
+      <application android:theme="@android:style/Theme.NoTitleBar" >
+          <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+          </activity>
+      </application>
+  </config-file>
+  <engine name="android" spec="~6.1.0" />
+
+</widget>
