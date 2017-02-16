@@ -14,7 +14,7 @@ module.exports = function (gulp, plugins, config, args) {
 
     //config testfairy api_key
     config.dist.testfairy.api_key = args.apiKeyTestfairy ? args.apiKeyTestfairy : config.dist.testfairy.api_key;
-    
+
     return function () {
         log('Subiendo a Testfairy con api_key: ' + config.dist.testfairy.api_key);
         if (bothPlatforms) {
@@ -97,6 +97,7 @@ module.exports = function (gulp, plugins, config, args) {
         log('platform: ' + platform);
         log('icon_emoji: ' + payload.icon_emoji);
         // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
+        payload.channel = args.channel ? args.channel : 'builds';
 
         var form = {
             'payload': JSON.stringify(payload)

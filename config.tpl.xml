@@ -151,6 +151,5 @@
           </activity>
       </application>
   </config-file>
-  <engine name="android" spec="~6.1.0" />
 
 </widget>
