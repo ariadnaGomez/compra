@@ -69,9 +69,10 @@ module.exports = function (gulp, plugins, config, args) {
             .pipe(gulp.dest('.'));
 
         gulp.src(['./sonar.tpl.properties'])
-          .pipe(plugins.replace('%APP_NAME%', appName))
-          .pipe(plugins.replace('%APP_DESCRIPTION%', appDescription))
-          .pipe(plugins.rename('sonar.properties'))
+            .pipe(plugins.replace('%APP_NAME%', appName))
+            .pipe(plugins.replace('%APP_DESCRIPTION%', appDescription))
+            .pipe(plugins.replace('%VERSION%', appVersion))
+            .pipe(plugins.rename('sonar-project.properties'))
           .pipe(gulp.dest('.'))
           .on('end', done);
     };
