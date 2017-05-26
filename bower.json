@@ -25,11 +25,8 @@
     "ngCordova": "~0.1.27-alpha",
     "ngstorage": "~0.3.11",
     "lodash": "3.10.1",
-    "restangular": "~1.5.1",
     "angular-autogrow": "0.1.1",
-    "ionic": "bower-ionic#1.3.2",
-    "ionic-advanced-carousel": "^1.1.1",
-    "onezone-datepicker": "*",
+    "ionic": "bower-ionic#1.3.3",
     "angular-toastr": "^2.1.1"
   },
   "devDependencies": {
@@ -52,6 +49,7 @@
   },
   "resolutions": {
     "angular-animate": "1.5.3",
-    "angular": "1.5.3"
+    "angular": "1.5.3",
+    "sinon": "*"
   }
 }

@@ -3,8 +3,8 @@ module.exports = function(config) {
 
     config.app = {
         package: 'com.sanitas.arquetipo',
-        name: 'Sanitas Mayores',
-        description: 'Aplicacion para residencial de mayores',
+        name: 'Arquetipo',
+        description: 'Arquetipo',
         version: '1.0.0',
         minSdkVersion: 21
     };
